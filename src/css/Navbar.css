@@ -1,0 +1,63 @@
+@import url(/Users/junochiu/Documents/Workspace/MockAutoglyphs/mockautoglyphs/src/App.css);
+.navbar {
+  margin: 0;
+  padding: 3em 1em;
+}
+
+.navbar .container {
+  font-family: var(--primary-font);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% auto;
+      grid-template-columns: 10% auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .container .logo {
+  font-size: 15px;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+
+.navbar .container ul {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar .container ul li {
+  list-style-type: none;
+}
+
+.navbar .container ul li a {
+  margin-left: 1em;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.navbar .container ul li img {
+  width: 1em;
+  height: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 3em 2em !important;
+  }
+  .navbar .logo {
+    font-size: 18px !important;
+  }
+  .navbar a {
+    margin-left: 3em !important;
+    font-size: 18px !important;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */
