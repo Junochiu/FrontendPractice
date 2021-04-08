@@ -1,0 +1,94 @@
+@import url(/Users/junochiu/Documents/Workspace/MockAutoglyphs/mockautoglyphs/src/App.css);
+.artdisplay {
+  --display:4;
+  background: #DDDDDD;
+  display: flex-center;
+  place-content: center;
+  padding-bottom: 10px;
+  overflow: auto;
+}
+
+.artdisplay img {
+  width: calc((100% - (10*(2px*var(--display))))/var(--display));
+  height: auto;
+  margin: 10px 10px 0px 10px;
+  -webkit-box-shadow: 1px 1px #272727;
+          box-shadow: 1px 1px #272727;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0;
+}
+
+.container .block1, .container .block3, .container .block5 {
+  background: white;
+  padding: .5em 1em;
+}
+
+.container .block1 .blockchain-btn, .container .block3 .blockchain-btn, .container .block5 .blockchain-btn {
+  display: none;
+}
+
+.container .block4 {
+  background: #DDDDDD;
+  padding: 2em 1em;
+}
+
+.container .block4 input {
+  display: block;
+  width: 100%;
+  font-family: var(--primary-font);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 0;
+  color: white;
+  outline: none;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px 15px;
+  margin: 10px 0px 0px;
+  text-align: left;
+}
+
+.container .block6 .artdisplay {
+  --display:6;
+}
+
+.container p {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  line-height: 180%;
+}
+
+.container h1 {
+  font-size: 40px;
+}
+
+.container h3 {
+  font-size: 24px;
+}
+
+.container .table .cell {
+  margin-top: 2em;
+}
+
+.container .table .cell span {
+  display: block;
+  font-weight: 600;
+}
+
+@media only screen and (min-width: 768px) {
+  .block1, .block3, .block5 {
+    padding: .5em 4em !important;
+  }
+  .block1 .blockchain-btn, .block3 .blockchain-btn, .block5 .blockchain-btn {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    font-family: var(--primary-font);
+    text-transform: uppercase;
+    outline: none;
+  }
+}
+/*# sourceMappingURL=Autoglyphs.css.map */

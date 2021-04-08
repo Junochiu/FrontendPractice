@@ -1,0 +1,96 @@
+@import "../App.css";
+@import "./ArtDisplay.scss";
+
+.container{
+    margin:0;
+    .block1, .block3, .block5{
+        background: white;
+        padding: .5em 1em;
+        .blockchain-btn{
+            display: none;
+        }
+    }
+    .block4{
+        background: #DDDDDD;
+        padding: 2em 1em;
+        input{
+            cursor:pointer;
+            display: block;
+            width:100%;
+            font-family: var(--primary-font);
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 0;
+            color:white;
+            outline: none;
+            background-color: var(--primary-color);
+            border:none;
+            padding: 12px 15px;
+            margin: 10px 0px 0px;
+            text-align: left;
+            &:hover{
+                background-color:black;
+            }
+        }
+    }
+    .block6{
+        .artdisplay{
+            --display:6;
+        }
+    }
+    p{
+        font-family: var(--primary-font);
+        font-size: 18px;
+        line-height: 180%;
+    }
+    h1{
+        font-size: 40px;
+    }
+    h3{
+        font-size: 24px;
+    }
+    .table{
+        .cell{
+            margin-top: 2em;
+            span{
+                display:block;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .block1, .block3, .block5{
+        padding: 4em 4em !important;
+        .blockchain-btn{
+            display: flex !important;
+            font-family: var(--primary-font);
+            font-size:11px;
+            font-weight:600;
+            letter-spacing:1.5px;
+            text-transform: uppercase;
+            outline:none;
+            color:white;
+            background:var(--primary-color);
+            border-radius: 30px;
+            border:none;
+            padding: .5em 2em;
+            cursor:pointer;
+            &:hover{
+                background-color:black;
+            }
+        }
+        h3{
+        margin: 3em 0em 0em;
+    }
+    }
+    .block4{
+        padding: 4em 4em !important;
+    }
+    h1{
+        margin: 1em 0em;
+        font-size:48px !important;
+    }
+    
+}

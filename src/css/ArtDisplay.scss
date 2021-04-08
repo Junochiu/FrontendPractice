@@ -1,0 +1,16 @@
+.artdisplay{
+    --display:4;
+    background: #DDDDDD;
+    display: flex-center;
+    place-content: center;
+    padding-bottom: 10px;
+    overflow: auto;
+    img{
+        width:calc((100% - (10*(2px*var(--display))))/var(--display));
+        height:auto;
+        margin:10px 10px 0px 10px; 
+        box-shadow: 1px 1px #272727; 
+        cursor: pointer; 
+         
+    }
+}
