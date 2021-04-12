@@ -8,6 +8,7 @@ import Autoglyphs from "./components/Autoglyphs"
 import Projects from "./components/Projects"
 import Writing from "./components/Writing"
 import About from "./components/About"
+import Glyph from "./components/Glyph"
 
 
 export default class App extends Component{
@@ -25,6 +26,7 @@ export default class App extends Component{
             <Route path="/projects" component={Projects} />
             <Route path="/writing" component={Writing} />
             <Route path="/about" component={About} />
+            <Route path="/glyph" component={Glyph}/>
           </Switch>
       </BrowserRouter>
     )
