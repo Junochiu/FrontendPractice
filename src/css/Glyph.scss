@@ -65,3 +65,52 @@ div{
         }
     }
 }
+
+@media only screen and (min-width:768px){
+    .glyphimg{
+        background-color: var(--secondary-color);
+        text-align: center;
+        margin: 2.5em 0em;
+        img{
+            width:calc(100% - 16%);
+            height:auto;
+            justify-self: center;
+            justify-content: center;
+            margin: 8%;
+            box-shadow: 3px 3px #AAAAAA;
+        }
+    }
+    
+    .metadata{
+        padding: 0em 3em !important;
+    }
+    
+}
+
+@media only screen and (min-width:1024px){
+    .glyphimg{
+        img{
+            width:880px;
+            height:auto;
+            box-shadow: 3px 3px #AAAAAA;
+        }
+    }
+    
+    .metadata{
+        justify-self: center;
+        .cell{
+            margin: auto !important;
+            width: 880px;
+            display: grid;
+            grid-template-columns: 30% auto;
+            .title{
+                margin-bottom: .5em;
+                margin-right: .5em;
+            }
+            .pink{
+                color: var(--primary-color);
+            }
+        }
+    }
+    
+}
