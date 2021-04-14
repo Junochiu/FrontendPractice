@@ -19,7 +19,7 @@ export default class Navbar extends Component{
                             <li><Link to="/projects">Projects</Link></li>
                             <li><Link to="/writing">Writing</Link></li>
                             <li><Link to="/about">About</Link></li>
-                            <li><a href="www.twitter.com"><img src={twitter} alt="twitter icon"/></a></li>
+                            <li><Link to="/twitter"><img src={twitter} alt="twitter icon"/></Link></li>
                         </ul>
                     </nav>
                 </div>
