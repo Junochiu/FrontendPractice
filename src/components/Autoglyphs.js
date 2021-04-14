@@ -1,6 +1,7 @@
 import React,{Component} from "react"
 import ArtDisplay from "./ArtDisplay"
 import {DisplayData} from "./DisplayData"
+import ReactPlayer from 'react-player'
 
 import "../css/Autoglyphs.scss"
 
@@ -65,6 +66,11 @@ export default class Autoglyphs extends Component{
                 </div>
                 <div className="block6">
                     <ArtDisplay arts={DisplayData} mindisplay={4} maxdisplay={4} displaynum='20'/>
+                </div>
+                <div className="block7">
+                    <h3>Rendering the Works</h3>
+                    <p>The idea of having the Blockchain dictate "instructions" for the works to be rendered was inpsired by Sol LeWitt's Wall Drawings. Along with the digital renderings you see on this site, we use a CNC plotter to render our Autoglyphs in physical form. Here it is hard at work:</p>
+                    <ReactPlayer className="video" playing={true} url="https://www.larvalabs.com/public/images/autoglyphs/autoglyph_plotter.mov" alt="glyph_plotter"/>
                 </div>
             </div>
         )
