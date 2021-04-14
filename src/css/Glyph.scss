@@ -1,0 +1,116 @@
+@import "../App.css";
+
+
+div{
+    font-family: var(--primary-font);
+}
+.banner{
+    margin:0;
+    text-align: center;
+    h3{
+        margin:.2em;
+        font-size: 36px;
+        font-weight: 600;
+    }
+    ul{
+        list-style: none;
+        margin:0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        p{
+            cursor:pointer;
+            text-decoration: none;
+            margin: 10px;
+            font-size:18px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        a{
+            cursor:pointer;
+            text-decoration: none;
+            margin: 10px;
+            font-size:18px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+    }
+}
+
+.glyphimg{
+    background-color: var(--secondary-color);
+    justify-self: center;
+    margin: 2.5em 0em;
+    img{
+        width:calc(100% - 5em);
+        height:auto;
+        justify-self: center;
+        place-content: center;
+        margin: 2.5em;
+        box-shadow: 3px 3px #AAAAAA;
+    }
+}
+
+.metadata{
+    font-size: 18px;
+    font-weight:600;
+    padding: 0em 1em;
+    .cell{
+        margin-bottom: .5em;
+        .title{
+            margin-bottom: .5em;
+        }
+        .pink{
+            color: var(--primary-color);
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .glyphimg{
+        background-color: var(--secondary-color);
+        text-align: center;
+        margin: 2.5em 0em;
+        img{
+            width:calc(100% - 16%);
+            height:auto;
+            justify-self: center;
+            justify-content: center;
+            margin: 8%;
+            box-shadow: 3px 3px #AAAAAA;
+        }
+    }
+    
+    .metadata{
+        padding: 0em 3em !important;
+    }
+    
+}
+
+@media only screen and (min-width:1024px){
+    .glyphimg{
+        img{
+            width:880px;
+            height:auto;
+            box-shadow: 3px 3px #AAAAAA;
+        }
+    }
+    
+    .metadata{
+        justify-self: center;
+        .cell{
+            margin: auto !important;
+            width: 880px;
+            display: grid;
+            grid-template-columns: 30% auto;
+            .title{
+                margin-bottom: .5em;
+                margin-right: .5em;
+            }
+            .pink{
+                color: var(--primary-color);
+            }
+        }
+    }
+    
+}

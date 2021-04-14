@@ -94,3 +94,11 @@
     }
     
 }
+
+@media only screen and (min-width:1024px){
+    .block6{
+        .artdisplay{
+            --display:12 !important;
+        }
+    }
+}
